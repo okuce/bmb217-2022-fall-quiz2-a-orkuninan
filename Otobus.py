@@ -14,4 +14,5 @@ class Otobus:
  def bilet_iade(self):
      Otobus.dolu_koltik -= 1
  def durum_yaz(self):
-     return f"{self.kalkis},{self.varis},{self.plaka},{self.dolu_koltik}"
+     bos_koltuk = Otobus.koltuk_sayi - Otobus.dolu_koltik
+       return f"{self.kalkis},{self.varis},{self.plaka},{self.bos_koltuk},{self.dolu_koltik}"
