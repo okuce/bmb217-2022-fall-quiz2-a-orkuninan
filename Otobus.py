@@ -1,18 +1,14 @@
 class Otobus:
-    """Otobus bilet satis takip sinifi"""
-    
-
-    def bilet_sat(self):
-        """Otobusteki dolu koltuk sayisini 1 artirir"""
-        
-    
-    def bilet_iade(self):
-        """Otobusteki dolu koltuk sayisini 1 azaltir"""
-        
-
-    
-    def durum_yaz(self):
-        """Otobusun guzergahini, plakasini,bos ve dolu koltuk sayisini yazdirir"""
-        
-
-
+    otobusler: str = ""
+    satislar: int = ""
+    iadeler: int = ""
+    kalkis: str = ""
+    varis: str = ""
+    dolu_koltik = 0
+    plaka: str = ""
+  def bilet_sat(self):
+     Otobus.dolu_koltik += 1
+ def bilet_iade(self):
+     Otobus.dolu_koltik -= 1
+ def durum_yaz(self):
+      return f"{self.kalkis},{self.varis},{self.plaka},{self.dolu_koltik}"
